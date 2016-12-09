@@ -5,7 +5,7 @@ const path = require('path');
 
 function getData(){
   return new Promise(function(resolve, reject){
-    fs.readFile(path.join(__dirname, 'interfaces/qBaseFakeData.data'), (err, data) => {
+    fs.readFile(path.join(__dirname, 'qBaseFakeData.data'), (err, data) => {
       if (err) {
         reject(err);
       }
